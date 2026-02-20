@@ -1,0 +1,197 @@
+{
+	"$schema": "https://inlang.com/schema/inlang-message-format",
+	"navbar": {
+		"upload": "Lataa",
+		"convert": "Muunna",
+		"settings": "Asetukset",
+		"toggle_theme": "Vaihda teema"
+	},
+	"footer": {
+		"copyright": "© {year} muunna.",
+		"privacy_policy": "Tietosuojakäytäntö"
+	},
+	"upload": {
+		"title": "Muunna tiedostosi vaivatta.",
+		"subtitle": "Kaikki tiedostot käsitellään paikallisesti laitteellasi. Ei tiedostorajoituksia, ei mainoksia, ei seurantaa.",
+		"uploader": {
+			"text": "Pudota tai napsauta {action}",
+			"convert": "muuntaaksesi"
+		},
+		"cards": {
+			"title": "muunna. tukee...",
+			"images": "Kuvat",
+			"audio": "Ääni",
+			"documents": "Asiakirjat",
+			"local_supported": "Paikallinen tuki",
+			"status": {
+				"text": "<b>Tila:</b> {status}",
+				"ready": "valmis",
+				"not_ready": "ei valmis",
+				"not_initialized": "ei alustettu",
+				"downloading": "ladataan...",
+				"initializing": "alustetaan...",
+				"unknown": "tuntematon tila"
+			},
+			"supported_formats": "Tuetut tiedostomuodot:"
+		},
+		"tooltip": {
+			"partial_support": "Tämä tiedostomuoto voidaan muuntaa vain {direction}.",
+			"direction_input": "syötteenä (mistä)",
+			"direction_output": "tulosteena (mihin)"
+		}
+	},
+	"convert": {
+		"archive_file": {
+			"extract": "Pura arkisto",
+			"extracting": "Havaittu arkisto: {filename}",
+			"extracted": "Purettu {extract_count} tiedostoa arkistosta {filename}. {ignore_count} kohdetta ohitettiin.",
+			"detected": "Havaittu {type} tiedostoja arkistossa {filename}.",
+			"audio": "ääni",
+			"doc": "asiakirja",
+			"image": "kuva",
+			"extract_error": "Virhe purettaessa {filename}: {error}"
+		},
+		"panel": {
+			"convert_all": "Muunna kaikki",
+			"download_all": "Lataa kaikki .zip-tiedostona",
+			"remove_all": "Poista kaikki tiedostot",
+			"set_all_to": "Aseta kaikki muotoon",
+			"na": "Ei saatavilla"
+		},
+		"dropdown": {
+			"audio": "Ääni",
+			"doc": "Asiakirja",
+			"image": "Kuva",
+			"placeholder": "Hae muotoa",
+			"no_formats": "Ei saatavilla olevia muotoja",
+			"no_results": "Hakuasi vastaavia muotoja ei löytynyt"
+		},
+		"tooltips": {
+			"unknown_file": "Tuntematon tiedostotyyppi",
+			"audio_file": "Äänitiedosto",
+			"document_file": "Asiakirjatiedosto",
+			"image_file": "Kuvatiedosto",
+			"convert_file": "Muunna tämä tiedosto",
+			"download_file": "Lataa tämä tiedosto"
+		},
+		"errors": {
+			"cant_convert": "Tätä tiedostoa ei voida muuntaa.",
+			"unsupported_format": "Vain kuva-, ääni- ja asiakirjatiedostot ovat tuettuja",
+			"format_output_only": "Tätä muotoa voidaan tällä hetkellä käyttää vain tulosteena (muuntaa tähän muotoon), ei syötteenä.",
+			"worker_downloading": "{type}-muunnin alustetaan parhaillaan, odota hetki.",
+			"worker_error": "{type}-muuntimessa tapahtui virhe alustuksen aikana, yritä myöhemmin uudelleen.",
+			"worker_timeout": "{type}-muuntimen alustus kestää odotettua kauemmin, odota vielä hetki tai päivitä sivu.",
+			"audio": "ääni",
+			"doc": "asiakirja",
+			"image": "kuva"
+		}
+	},
+	"settings": {
+		"title": "Asetukset",
+		"errors": {
+			"save_failed": "Asetusten tallentaminen epäonnistui!"
+		},
+		"appearance": {
+			"title": "Ulkoasu",
+			"brightness_theme": "Teema",
+			"brightness_description": "Valitse vaalean ja tumman tilan välillä.",
+			"light": "Vaalea",
+			"dark": "Tumma",
+			"effect_settings": "Tehosteasetukset",
+			"effect_description": "Ota visuaaliset animaatiot ja tehosteet käyttöön tai poista ne käytöstä.",
+			"enable": "Ota käyttöön",
+			"disable": "Poista käytöstä"
+		},
+		"conversion": {
+			"title": "Muuntaminen",
+			"advanced_settings": "Lisäasetukset",
+			"filename_format": "Tiedostonimen muoto",
+			"filename_description": "Tämä määrittää ladattavan tiedoston nimen, <b>ilman tiedostopäätettä.</b> Voit käyttää seuraavia muuttujia: <b>%name%</b> alkuperäinen tiedostonimi, <b>%extension%</b> alkuperäinen tiedostopääte ja <b>%date%</b> muuntamisen päivämäärä.",
+			"placeholder": "MUUNNA_%name%",
+			"default_format": "Oletusmuuntomuoto",
+			"default_format_enable": "Ota käyttöön",
+			"default_format_disable": "Poista käytöstä",
+			"default_format_description": "Tämä muuttaa oletusmuotoa, joka valitaan kun lataat tämän tyyppisen tiedoston.",
+			"default_format_image": "Kuvat",
+			"default_format_audio": "Ääni",
+			"default_format_document": "Asiakirjat",
+			"metadata": "Tiedoston metatiedot",
+			"metadata_description": "Tämä määrittää, säilytetäänkö alkuperäisen tiedoston metatiedot (EXIF, kappaletiedot jne.) muunnetuissa tiedostoissa.",
+			"keep": "Säilytä",
+			"remove": "Poista",
+			"quality": "Muuntolaatu",
+			"quality_description": "Tämä muuttaa muunnettujen tiedostojen oletuslähtölaatua. Korkeammat arvot voivat johtaa pidempiin muuntoaikoihin ja suurempaan tiedostokokoon.",
+			"quality_audio": "Ääni (kbps)",
+			"quality_images": "Kuva (%)",
+			"rate": "Näytteenottotaajuus (Hz)"
+		},
+		"privacy": {
+			"title": "Tietosuoja ja data",
+			"fathom_title": "Fathom-analytiikka",
+			"fathom_description": "Käytämme [fathom_link]Fathomia[/fathom_link], yksityisyyteen keskittyvää analytiikkatyökalua, täysin anonyymien tilastojen keräämiseen. Kaikki tiedot ovat anonymisoituja ja koottuja, eikä tunnistettavia tietoja koskaan lähetetä tai tallenneta. Voit halutessasi poistaa sen käytöstä alla.",
+			"opt_in": "Ota käyttöön",
+			"opt_out": "Poista käytöstä",
+			"cache_title": "Välimuistin hallinta",
+			"cache_description": "Muunnostiedostot tallennetaan selaimen välimuistiin, jotta niitä ei tarvitse ladata uudelleen joka kerta.",
+			"refresh_cache": "Päivitä välimuisti",
+			"clear_cache": "Tyhjennä välimuisti",
+			"files_cached": "{size} ({count} tiedostoa)",
+			"loading_cache": "Ladataan...",
+			"total_size": "Kokonaiskoko",
+			"files_cached_label": "Välimuistissa olevat tiedostot",
+			"cache_cleared": "Välimuisti tyhjennetty!",
+			"cache_clear_error": "Välimuistin tyhjentäminen epäonnistui.",
+			"site_data_title": "Sivuston tietojen hallinta",
+			"site_data_description": "Tyhjennä kaikki sivuston tiedot, mukaan lukien asetukset ja välimuisti, palauttaen sovelluksen oletustilaan.",
+			"clear_all_data": "Tyhjennä kaikki tiedot",
+			"clear_all_data_confirm_title": "Tyhjennä kaikki tiedot?",
+			"clear_all_data_confirm": "Tämä nollaa kaikki asetukset ja välimuistin ja lataa sivun uudelleen. Tätä toimintoa ei voi kumota.",
+			"clear_all_data_cancel": "Peruuta",
+			"all_data_cleared": "Kaikki tiedot tyhjennetty! Sivu ladataan uudelleen...",
+			"all_data_clear_error": "Kaikkien tietojen tyhjentäminen epäonnistui."
+		},
+		"language": {
+			"title": "Kieli",
+			"description": "Valitse haluamasi kieli."
+		}
+	},
+	"workers": {
+		"errors": {
+			"general": "Virhe muunnettaessa {file}: {message}",
+			"cancel": "Virhe peruutettaessa muuntoa tiedostolle {file}: {message}",
+			"magick": "Virhe Magick-työntekijässä, kuvien muuntaminen ei ehkä toimi odotetusti.",
+			"ffmpeg": "Virhe ladattaessa FFmpegiä, jotkut toiminnot eivät ehkä toimi odotetusti.",
+			"pandoc": "Virhe Pandoc-työntekijässä, asiakirjojen muuntaminen ei ehkä toimi odotetusti.",
+			"no_audio": "Ääniraitaa ei löytynyt.",
+			"invalid_rate": "Virheellinen näytteenottotaajuus: {rate} Hz",
+			"file_too_large": "Tämä tiedosto ylittää selaimen {limit} Gt rajoituksen. Kokeile Firefoxia tai Safaria tämän kokoisen tiedoston muuntamiseen."
+		}
+	},
+	"privacy": {
+		"title": "Tietosuojakäytäntö",
+		"summary": {
+			"title": "Yhteenveto",
+			"description": "muunna. ei kerää tai tallenna henkilötietoja. Emme käytä evästeitä tai seurantaohjelmia. Analytiikka on täysin yksityisyyteen keskittyvää. Kaikki muunnokset tapahtuvat paikallisesti selaimessasi — tiedostosi eivät koskaan poistu laitteeltasi."
+		},
+		"conversions": {
+			"title": "Muuntaminen",
+			"description": "Kaikki muunnokset (kuvat, asiakirjat, ääni) tapahtuvat kokonaan paikallisesti laitteellasi WebAssemblyn avulla. Tiedostosi eivät koskaan poistu laitteeltasi."
+		},
+		"analytics": {
+			"title": "Analytiikka",
+			"description": "Käytämme Fathomia, yksityisyyteen keskittyvää analytiikkatyökalua, joka ei käytä evästeitä ja noudattaa GDPR-, CCPA- ja PECR-säännöksiä. Lue lisää [fathom_link]Fathomin tietosuojakäytännöistä[/fathom_link]."
+		},
+		"local_storage": {
+			"title": "Paikallinen tallennus",
+			"description": "Käytämme selaimen paikallista tallennustilaa asetusten tallentamiseen. WebAssembly-muuntotyökalut tallennetaan myös paikallisesti, jotta niitä ei tarvitse ladata uudelleen joka käynnillä. Henkilötietoja ei tallenneta tai välitetä."
+		},
+		"contact": {
+			"title": "Yhteystiedot",
+			"description": "Kysymyksissä ota yhteyttä: [email_link]hello@vaivatta.fi[/email_link]."
+		},
+		"last_updated": "Viimeksi päivitetty: 20.2.2026"
+	},
+	"toast": {
+		"insecure_context": "Käytät muunna.-palvelua suojaamattomassa yhteydessä (esim. HTTP HTTPS:n sijaan). Jotkut toiminnot eivät ehkä toimi odotetusti."
+	}
+}

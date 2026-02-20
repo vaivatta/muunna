@@ -1,0 +1,63 @@
+{
+	"name": "muunna",
+	"version": "0.0.1",
+	"type": "module",
+	"scripts": {
+		"dev": "svelte-kit sync && vite dev",
+		"build": "paraglide-js compile --project ./project.inlang --outdir ./src/lib/paraglide && vite build",
+		"preview": "vite preview",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+		"format": "prettier --write .",
+		"lint": "prettier --check . && eslint ."
+	},
+	"devDependencies": {
+		"@inlang/paraglide-js": "^2.12.0",
+		"@poppanator/sveltekit-svg": "^5.0.1",
+		"@sveltejs/adapter-static": "^3.0.10",
+		"@sveltejs/kit": "^2.52.2",
+		"@sveltejs/vite-plugin-svelte": "^6.2.4",
+		"@types/eslint": "^9.6.1",
+		"autoprefixer": "^10.4.24",
+		"css-select": "5.1.0",
+		"eslint": "^9.39.1",
+		"eslint-config-prettier": "^10.1.8",
+		"eslint-plugin-svelte": "^2.46.1",
+		"globals": "^15.15.0",
+		"prettier": "^3.8.1",
+		"prettier-plugin-svelte": "^3.5.0",
+		"prettier-plugin-tailwindcss": "^0.6.14",
+		"sass": "^1.97.3",
+		"svelte": "^5.53.0",
+		"svelte-check": "^4.4.1",
+		"tailwindcss": "^3.4.18",
+		"typescript": "^5.9.3",
+		"typescript-eslint": "^8.47.0",
+		"vite": "^6.3.0",
+		"vite-plugin-top-level-await": "^1.6.0"
+	},
+	"dependencies": {
+		"@bjorn3/browser_wasi_shim": "^0.4.2",
+		"@ffmpeg/ffmpeg": "^0.12.15",
+		"@ffmpeg/util": "^0.12.2",
+		"@fontsource/finlandica": "^5.2.10",
+		"@imagemagick/magick-wasm": "^0.0.38",
+		"byte-data": "^19.0.1",
+		"client-zip": "^2.5.0",
+		"clsx": "^2.1.1",
+		"fflate": "^0.8.2",
+		"isomorphic-dompurify": "^2.36.0",
+		"lucide-svelte": "^0.575.0",
+		"music-metadata": "^11.12.1",
+		"overlayscrollbars": "^2.14.0",
+		"overlayscrollbars-svelte": "^0.5.5",
+		"p-queue": "^9.1.0",
+		"riff-file": "^1.0.3",
+		"vert-wasm": "^0.0.2",
+		"vite-plugin-wasm": "^3.5.0"
+	},
+	"trustedDependencies": [
+		"@parcel/watcher",
+		"@swc/core"
+	]
+}

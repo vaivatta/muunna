@@ -1,0 +1,264 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url(@fontsource/finlandica/400.css);
+@import url(@fontsource/finlandica/500.css);
+@import url(@fontsource/finlandica/600.css);
+@import url(@fontsource/finlandica/700.css);
+
+:root {
+	--font-body: "Finlandica", system-ui, -apple-system, BlinkMacSystemFont,
+		"Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+		"Helvetica Neue", sans-serif;
+	--font-display: "Finlandica", var(--font-body);
+	--transition: linear(
+		0,
+		0.006,
+		0.025 2.8%,
+		0.101 6.1%,
+		0.539 18.9%,
+		0.721 25.3%,
+		0.849 31.5%,
+		0.937 38.1%,
+		0.968 41.8%,
+		0.991 45.7%,
+		1.006 50.1%,
+		1.015 55%,
+		1.017 63.9%,
+		1.001
+	);
+}
+
+@mixin light {
+	--accent: hsl(217, 91%, 60%);
+	--accent-alt: hsl(217, 91%, 50%);
+	--accent-blue: hsl(217, 91%, 60%);
+	--accent-blue-alt: hsl(217, 91%, 50%);
+	--accent-red: hsl(0, 84%, 60%);
+	--accent-red-alt: hsl(0, 84%, 50%);
+	--accent-green: hsl(142, 71%, 45%);
+	--accent-green-alt: hsl(142, 64%, 38%);
+	--accent-transparent: hsla(217, 91%, 50%, 0);
+
+	--fg: hsl(0, 0%, 10%);
+	--fg-muted: hsla(0, 0%, 10%, 0.6);
+	--fg-on-accent: hsl(0, 0%, 100%);
+	--fg-on-badge: hsl(0, 0%, 100%);
+	--fg-accent: hsl(217, 91%, 50%);
+	--fg-failure: var(--accent-red-alt);
+
+	--bg: hsl(220, 14%, 96%);
+
+	--bg-gradient-from: hsla(217, 91%, 60%, 0.15);
+	--bg-gradient-to: hsla(217, 91%, 60%, 0);
+	--bg-gradient-blue-from: hsla(217, 91%, 60%, 0.15);
+	--bg-gradient-blue-to: hsla(217, 91%, 60%, 0);
+	--bg-gradient-image-from: hsla(220, 14%, 96%, 0.5);
+	--bg-gradient-image-to: hsla(220, 14%, 96%, 1);
+
+	--bg-gradient: linear-gradient(
+		to bottom,
+		var(--bg-gradient-from),
+		var(--bg-gradient-to) 100%
+	);
+	--bg-gradient-blue: linear-gradient(
+		to bottom,
+		var(--bg-gradient-blue-from),
+		var(--bg-gradient-blue-to) 25%
+	);
+	--bg-gradient-image: linear-gradient(
+		to bottom,
+		var(--bg-gradient-image-from),
+		var(--bg-gradient-image-to) 100%
+	);
+
+	--bg-panel: hsl(0, 0%, 100%);
+	--bg-panel-highlight: hsl(220, 14%, 92%);
+	--bg-separator: hsla(0, 0%, 0%, 0.15);
+	--bg-button: var(--bg-panel-highlight);
+	--bg-badge: var(--accent);
+	--bg-input: hsl(220, 14%, 89%);
+
+	--shadow-panel: 0 2px 4px 0 hsla(0, 0%, 0%, 0.1);
+}
+
+@mixin dark {
+	--accent: hsl(217, 95%, 70%);
+	--accent-alt: hsl(217, 91%, 60%);
+	--accent-blue: hsl(217, 95%, 70%);
+	--accent-blue-alt: hsl(217, 91%, 60%);
+	--accent-red: hsl(0, 84%, 68%);
+	--accent-red-alt: hsl(0, 84%, 55%);
+	--accent-green: hsl(142, 71%, 55%);
+	--accent-green-alt: hsl(142, 64%, 42%);
+	--accent-transparent: hsla(217, 91%, 50%, 0);
+
+	--fg: hsl(0, 0%, 100%);
+	--fg-muted: hsla(0, 0%, 100%, 0.65);
+	--fg-on-accent: hsl(0, 0%, 100%);
+	--fg-on-badge: hsl(0, 0%, 100%);
+	--fg-accent: var(--accent);
+	--fg-failure: var(--accent-red);
+
+	--bg: hsl(0, 0%, 10%);
+
+	--bg-gradient-from: hsla(217, 91%, 50%, 0.08);
+	--bg-gradient-to: hsla(217, 91%, 50%, 0);
+	--bg-gradient-blue-from: hsla(217, 91%, 50%, 0.08);
+	--bg-gradient-blue-to: hsla(217, 91%, 50%, 0);
+	--bg-gradient-image-from: hsla(0, 0%, 8%, 0.5);
+	--bg-gradient-image-to: hsla(0, 0%, 8%, 1);
+
+	--bg-gradient: linear-gradient(
+		to bottom,
+		var(--bg-gradient-from),
+		var(--bg-gradient-to) 100%
+	);
+	--bg-gradient-blue: linear-gradient(
+		to bottom,
+		var(--bg-gradient-blue-from),
+		var(--bg-gradient-blue-to) 25%
+	);
+	--bg-gradient-image: linear-gradient(
+		to bottom,
+		var(--bg-gradient-image-from),
+		var(--bg-gradient-image-to) 100%
+	);
+
+	--bg-panel: hsl(0, 0%, 16%);
+	--bg-panel-highlight: hsl(0, 0%, 22%);
+	--bg-separator: hsl(0, 0%, 20%);
+	--bg-button: hsl(0, 0%, 24%);
+	--bg-badge: var(--accent);
+
+	--shadow-panel: 0 4px 6px 0 hsla(0, 0%, 0%, 0.15);
+
+	color-scheme: dark;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		@include dark;
+	}
+}
+
+@media (prefers-color-scheme: light) {
+	:root {
+		@include light;
+	}
+}
+
+:root.light {
+	@include light;
+}
+
+:root.dark {
+	@include dark;
+}
+
+body {
+	@apply text-foreground font-body font-medium overflow-x-hidden;
+	width: 100vw;
+	background-color: var(--bg);
+	background-size: 100vw 100vh;
+}
+
+::selection,
+::-moz-selection {
+	@apply bg-accent text-on-accent;
+}
+
+.hoverable {
+	@apply hover:scale-105 duration-200;
+	will-change: transform;
+}
+
+.hoverable-md {
+	@apply hover:scale-110 duration-200;
+	will-change: transform;
+}
+
+.hoverable-lg {
+	@apply hover:scale-[1.15] duration-200;
+	will-change: transform;
+}
+
+.selected {
+	@apply bg-accent !text-white;
+}
+
+@layer components {
+	select {
+		@apply appearance-none;
+	}
+
+	.btn {
+		@apply bg-button flex items-center justify-center overflow-hidden relative cursor-pointer px-6 h-14 rounded-full font-medium focus:!outline-none hover:scale-105 duration-200 active:scale-95 disabled:opacity-50 disabled:pointer-events-none hoverable;
+		transition:
+			opacity 0.2s ease,
+			transform 0.2s ease,
+			background-color 0.2s ease;
+	}
+
+	.btn.highlight {
+		@apply bg-accent text-on-accent;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		@apply font-display font-semibold;
+	}
+
+	code {
+		@apply font-mono bg-gray-200 rounded-md px-1 dynadark:bg-panel-alt dynadark:text-white;
+	}
+
+	p a {
+		@apply text-accent underline;
+	}
+
+	input[type="text"],
+	select.dropdown {
+		@apply w-full p-3 rounded-lg bg-panel border-2 border-button pl-3 pr-[4rem];
+	}
+
+	input[type="number"]::-webkit-inner-spin-button,
+	input[type="number"]::-webkit-outer-spin-button {
+		-webkit-appearance: none;
+		margin: 0;
+	}
+
+	input[type="number"] {
+		-moz-appearance: textfield;
+		appearance: textfield;
+	}
+
+	input[type="text"]::placeholder {
+		@apply text-muted font-normal;
+	}
+
+	input[type="text"]:focus {
+		@apply outline outline-accent outline-2;
+	}
+
+	input[type="range"] {
+		@apply appearance-none bg-panel h-2 rounded-lg;
+	}
+
+	input[type="range"]::-webkit-slider-thumb {
+		@apply appearance-none w-4 h-4 bg-accent rounded-full cursor-pointer;
+	}
+
+	input[type="range"]::-moz-range-thumb {
+		@apply w-4 h-4 bg-accent rounded-full cursor-pointer;
+	}
+
+	hr {
+		@apply border-separator;
+	}
+}

@@ -1,0 +1,197 @@
+{
+	"$schema": "https://inlang.com/schema/inlang-message-format",
+	"navbar": {
+		"upload": "Upload",
+		"convert": "Convert",
+		"settings": "Settings",
+		"toggle_theme": "Toggle theme"
+	},
+	"footer": {
+		"copyright": "© {year} muunna.",
+		"privacy_policy": "Privacy policy"
+	},
+	"upload": {
+		"title": "Convert your files effortlessly.",
+		"subtitle": "All file processing is done locally on your device. No file size limit, no ads, no tracking.",
+		"uploader": {
+			"text": "Drop or click to {action}",
+			"convert": "convert"
+		},
+		"cards": {
+			"title": "muunna. supports...",
+			"images": "Images",
+			"audio": "Audio",
+			"documents": "Documents",
+			"local_supported": "Local supported",
+			"status": {
+				"text": "<b>Status:</b> {status}",
+				"ready": "ready",
+				"not_ready": "not ready",
+				"not_initialized": "not initialized",
+				"downloading": "downloading...",
+				"initializing": "initializing...",
+				"unknown": "unknown status"
+			},
+			"supported_formats": "Supported formats:"
+		},
+		"tooltip": {
+			"partial_support": "This format can only be converted as {direction}.",
+			"direction_input": "input (from)",
+			"direction_output": "output (to)"
+		}
+	},
+	"convert": {
+		"archive_file": {
+			"extract": "Extract archive",
+			"extracting": "Detected archive: {filename}",
+			"extracted": "Extracted {extract_count} files from {filename}. {ignore_count} items were ignored.",
+			"detected": "Detected {type} files in {filename}.",
+			"audio": "audio",
+			"doc": "document",
+			"image": "image",
+			"extract_error": "Error extracting {filename}: {error}"
+		},
+		"panel": {
+			"convert_all": "Convert all",
+			"download_all": "Download all as .zip",
+			"remove_all": "Remove all files",
+			"set_all_to": "Set all to",
+			"na": "N/A"
+		},
+		"dropdown": {
+			"audio": "Audio",
+			"doc": "Document",
+			"image": "Image",
+			"placeholder": "Search format",
+			"no_formats": "No formats available",
+			"no_results": "No formats match your search"
+		},
+		"tooltips": {
+			"unknown_file": "Unknown file type",
+			"audio_file": "Audio file",
+			"document_file": "Document file",
+			"image_file": "Image file",
+			"convert_file": "Convert this file",
+			"download_file": "Download this file"
+		},
+		"errors": {
+			"cant_convert": "We can't convert this file.",
+			"unsupported_format": "Only image, audio, and document files are supported",
+			"format_output_only": "This format can currently only be used as output (converted to), not as input.",
+			"worker_downloading": "The {type} converter is currently being initialized, please wait a few moments.",
+			"worker_error": "The {type} converter had an error during initialization, please try again later.",
+			"worker_timeout": "The {type} converter is taking longer than expected to initialize, please wait a few more moments or refresh the page.",
+			"audio": "audio",
+			"doc": "document",
+			"image": "image"
+		}
+	},
+	"settings": {
+		"title": "Settings",
+		"errors": {
+			"save_failed": "Failed to save settings!"
+		},
+		"appearance": {
+			"title": "Appearance",
+			"brightness_theme": "Brightness theme",
+			"brightness_description": "Choose between light and dark mode.",
+			"light": "Light",
+			"dark": "Dark",
+			"effect_settings": "Effect settings",
+			"effect_description": "Enable or disable visual animations and effects.",
+			"enable": "Enable",
+			"disable": "Disable"
+		},
+		"conversion": {
+			"title": "Conversion",
+			"advanced_settings": "Advanced settings",
+			"filename_format": "File name format",
+			"filename_description": "This will determine the name of the file on download, <b>not including the file extension.</b> You can put these following templates in the format, which will be replaced with the relevant information: <b>%name%</b> for the original file name, <b>%extension%</b> for the original file extension, and <b>%date%</b> for a date string of when the file was converted.",
+			"placeholder": "MUUNNA_%name%",
+			"default_format": "Default conversion format",
+			"default_format_enable": "Enable",
+			"default_format_disable": "Disable",
+			"default_format_description": "This will change the default format selected when you upload a file of this file type.",
+			"default_format_image": "Images",
+			"default_format_audio": "Audio",
+			"default_format_document": "Documents",
+			"metadata": "File metadata",
+			"metadata_description": "This changes whether any metadata (EXIF, song info, etc.) on the original file is preserved in converted files.",
+			"keep": "Keep",
+			"remove": "Remove",
+			"quality": "Conversion quality",
+			"quality_description": "This changes the default output quality of the converted files (in its category). Higher values may result in longer conversion times and file size.",
+			"quality_audio": "Audio (kbps)",
+			"quality_images": "Image (%)",
+			"rate": "Sample rate (Hz)"
+		},
+		"privacy": {
+			"title": "Privacy & data",
+			"fathom_title": "Fathom analytics",
+			"fathom_description": "We use [fathom_link]Fathom[/fathom_link], a privacy-focused analytics tool, to gather completely anonymous statistics. All data is anonymized and aggregated, and no identifiable information is ever sent or stored. You can choose to opt out below.",
+			"opt_in": "Opt-in",
+			"opt_out": "Opt-out",
+			"cache_title": "Cache management",
+			"cache_description": "We cache the converter files on your browser so you don't have to re-download them every time, improving performance and reducing data usage.",
+			"refresh_cache": "Refresh cache",
+			"clear_cache": "Clear cache",
+			"files_cached": "{size} ({count} files)",
+			"loading_cache": "Loading...",
+			"total_size": "Total Size",
+			"files_cached_label": "Files Cached",
+			"cache_cleared": "Cache cleared successfully!",
+			"cache_clear_error": "Failed to clear cache.",
+			"site_data_title": "Site data management",
+			"site_data_description": "Clear all site data including settings and cached files, resetting the app to its default state and reloading the page.",
+			"clear_all_data": "Clear all site data",
+			"clear_all_data_confirm_title": "Clear all site data?",
+			"clear_all_data_confirm": "This will reset all settings & cache, then reload the page. This action cannot be undone.",
+			"clear_all_data_cancel": "Cancel",
+			"all_data_cleared": "All site data cleared! Reloading page...",
+			"all_data_clear_error": "Failed to clear all site data."
+		},
+		"language": {
+			"title": "Language",
+			"description": "Select your preferred language."
+		}
+	},
+	"workers": {
+		"errors": {
+			"general": "Error converting {file}: {message}",
+			"cancel": "Error canceling conversion for {file}: {message}",
+			"magick": "Error in Magick worker, image conversion may not work as expected.",
+			"ffmpeg": "Error loading FFmpeg, some features may not work as expected.",
+			"pandoc": "Error loading Pandoc worker, document conversion may not work as expected.",
+			"no_audio": "No audio stream found.",
+			"invalid_rate": "Invalid sample rate specified: {rate}Hz",
+			"file_too_large": "This file exceeds the {limit}GB browser / device limit. Try Firefox or Safari to convert this large file, which typically have higher limits."
+		}
+	},
+	"privacy": {
+		"title": "Privacy Policy",
+		"summary": {
+			"title": "Summary",
+			"description": "muunna. does not collect or store personal data. We don't use cookies or trackers. Analytics are completely privacy-focused. All conversions happen locally on your browser — your files never leave your device."
+		},
+		"conversions": {
+			"title": "Conversions",
+			"description": "All conversions (images, documents, audio) happen entirely locally on your device using WebAssembly. Your files never leave your device."
+		},
+		"analytics": {
+			"title": "Analytics",
+			"description": "We use Fathom, a privacy-focused analytics tool that does not use cookies and complies with GDPR, CCPA, and PECR. Read more about [fathom_link]Fathom's privacy practices[/fathom_link]."
+		},
+		"local_storage": {
+			"title": "Local Storage",
+			"description": "We use your browser's local storage to save your preferences. The WebAssembly conversion tools are also cached locally so you don't need to re-download them each visit. No personal data is stored or transmitted."
+		},
+		"contact": {
+			"title": "Contact",
+			"description": "For questions, email us at: [email_link]hello@vaivatta.fi[/email_link]."
+		},
+		"last_updated": "Last updated: 2026-02-20"
+	},
+	"toast": {
+		"insecure_context": "You are visiting muunna. in an insecure context (e.g. HTTP instead of HTTPS). Some features may not work as expected."
+	}
+}
